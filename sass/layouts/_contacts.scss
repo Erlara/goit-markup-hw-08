@@ -1,0 +1,38 @@
+.contacts {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.contacts__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+}
+
+.contacts__icon {
+    fill: var(--main-txt-cl);
+
+    transition: fill 250ms var(--timing-function);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+        fill: var(--link-txt-cl);
+        }
+}
+
+.contacts__link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+         color: var(--link-txt-cl);
+        }
+}
+

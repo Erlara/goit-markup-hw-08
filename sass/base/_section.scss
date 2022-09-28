@@ -1,0 +1,21 @@
+.section {
+  @include section;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-txt-cl);
+  margin-bottom: 50px;
+}
+
+.section--nopaddingtop {
+  padding-top: 0;
+}
+
+.section--otherbg {
+  background-color: var(--grey-bgr-cl);
+}

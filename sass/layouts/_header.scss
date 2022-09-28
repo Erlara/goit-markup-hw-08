@@ -1,0 +1,13 @@
+.header {
+    background-color: var(--main-bgr-cl);
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
