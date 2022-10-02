@@ -1,49 +1,105 @@
 .footer {
-    background-color: var(--secondary-bgd-cl);
-    padding: 60px 0;
+  background-color: var(--secondary-bgd-cl);
+  padding: 60px 0;
+}
+
+.footer__address {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  //tablet styles
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  //desktop styles
+  @media screen and (min-width: 1200px) {
+    margin-right: 0px;
+  }
 }
 
 .address-link {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--white-txt-cl);
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--white-txt-cl);
 
-    font-style: normal;
+  font-style: normal;
+}
+
+.address-list {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer-mail,
 .footer-tel {
-    margin-top: 9px;
+  margin-top: 9px;
 }
 
 .footer-link {
-    transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 
-    &:hover,
-    &:focus { 
-        color: var(--link-txt-cl);
-    }
+  &:hover,
+  &:focus {
+    color: var(--link-txt-cl);
+  }
 }
 
-
-
 .contact-item {
-    color: var(--white-txt-cl-60);
+  color: var(--white-txt-cl-60);
 }
 
 .footer__container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  //tablet styles
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
+  }
+
+  //desktop styles
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-direction: inherit;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-cont-icon {
+  //desktop styles
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-txt-cl);
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+  margin-bottom: 20px;
+  text-align: center;
+
+  //desktop styles
+  @media screen and (min-width: 1200px) {
+    text-align: inherit;
+  }
 }

@@ -20,14 +20,14 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo header__logo" href="./index.html"
-            >Web<span class="logo__dark">Studio</span></a
-          >
+          <a class="logo header__logo" href="./index.html">
+            Web<span class="logo__dark">Studio</span>
+          </a>
           <ul class="nav__list list">
-            <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a></li>
             <li class="nav__item"
-              ><a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a></li
+              ><a class="nav__link nav__link--active" href="./index.html">Студія</a></li
             >
+            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
             <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
@@ -49,6 +49,16 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Main-->
@@ -57,17 +67,44 @@
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="portfolio-list-btn">
-            <li><button class="portfolio-btn active" type="button">Усі</button></li>
-            <li><button class="portfolio-btn" type="button">Веб-сайти</button></li>
-            <li><button class="portfolio-btn" type="button">Додатки</button></li>
-            <li><button class="portfolio-btn" type="button">Дизайн</button></li>
-            <li><button class="portfolio-btn" type="button">Маркетинг</button></li>
+            <li class="portfolio-item"
+              ><button class="portfolio-btn active" type="button">Усі</button></li
+            >
+            <li class="portfolio-item"
+              ><button class="portfolio-btn" type="button">Веб-сайти</button></li
+            >
+            <li class="portfolio-item"
+              ><button class="portfolio-btn" type="button">Додатки</button></li
+            >
+            <li class="portfolio-item"
+              ><button class="portfolio-btn" type="button">Дизайн</button></li
+            >
+            <li class="portfolio-item"
+              ><button class="portfolio-btn" type="button">Маркетинг</button></li
+            >
           </ul>
           <ul class="portfolio-list-project">
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img src="./images/portfolio/img.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="images/portfolio/img_lg@1x.jpg 1x, images/portfolio/img_lg@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="images/portfolio/img_md@1x.jpg 1x, images/portfolio/img_md@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="images/portfolio/img_sm@1x.jpg 1x, images/portfolio/img_sm@2x.jpg 2x"
+                    />
+                    <img src="images/portfolio/img_sm@1x.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -76,7 +113,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-container-name">
+                <div class="portfolio-container-name portfolio-container-name--otherheight">
                   <h2 class="portfolio-project-name">Технокряк </h2>
                   <p class="portfolio-project">Веб-сайт</p>
                 </div>
@@ -85,7 +122,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img src="./images/portfolio/img1.jpg" alt="Постер" width="370" height="294" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-1.jpg 1x,
+                        images/portfolio/img_lg@2x-1.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-1.jpg 1x,
+                        images/portfolio/img_md@2x-1.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-1.jpg 1x,
+                        images/portfolio/img_sm@2x-1.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-1.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -103,7 +166,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img src="./images/portfolio/img2.jpg" alt="Ресторан" width="370" height="294" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-2.jpg 1x,
+                        images/portfolio/img_lg@2x-2.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-2.jpg 1x,
+                        images/portfolio/img_md@2x-2.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-2.jpg 1x,
+                        images/portfolio/img_sm@2x-2.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-2.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -121,12 +210,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio/img3.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-3.jpg 1x,
+                        images/portfolio/img_lg@2x-3.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-3.jpg 1x,
+                        images/portfolio/img_md@2x-3.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-3.jpg 1x,
+                        images/portfolio/img_sm@2x-3.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-3.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -144,12 +254,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio/img4.jpg"
-                    alt="Проєкт Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-4.jpg 1x,
+                        images/portfolio/img_lg@2x-4.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-4.jpg 1x,
+                        images/portfolio/img_md@2x-4.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-4.jpg 1x,
+                        images/portfolio/img_sm@2x-4.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-4.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -167,12 +298,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio/img5.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-5.jpg 1x,
+                        images/portfolio/img_lg@2x-5.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-5.jpg 1x,
+                        images/portfolio/img_md@2x-5.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-5.jpg 1x,
+                        images/portfolio/img_sm@2x-5.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-5.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -190,12 +342,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio/img6.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-6.jpg 1x,
+                        images/portfolio/img_lg@2x-6.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-6.jpg 1x,
+                        images/portfolio/img_md@2x-6.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-6.jpg 1x,
+                        images/portfolio/img_sm@2x-6.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-6.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -213,12 +386,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio/img7.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-7.jpg 1x,
+                        images/portfolio/img_lg@2x-7.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-7.jpg 1x,
+                        images/portfolio/img_md@2x-7.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-7.jpg 1x,
+                        images/portfolio/img_sm@2x-7.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-7.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -236,12 +430,33 @@
             <li class="portfolio-card">
               <a class="portfolio-link" href="">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio/img8.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio/img_lg@1x-8.jpg 1x,
+                        images/portfolio/img_lg@2x-8.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio/img_md@1x-8.jpg 1x,
+                        images/portfolio/img_md@2x-8.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        images/portfolio/img_sm@1x-8.jpg 1x,
+                        images/portfolio/img_sm@2x-8.jpg 2x
+                      "
+                    />
+                    <img src="images/portfolio/img_sm@1x-8.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -266,7 +481,7 @@
         <div class="footer__address">
           <a class="logo" href="./index.html"> Web<span class="logo__light">Studio</span> </a>
           <address class="address-link">
-            <ul>
+            <ul class="address-list">
               <li>
                 <a
                   class="footer-link"
@@ -369,5 +584,63 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-btn__icon" width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item"
+          ><a href="./index.html" class="mobile-menu-link">Студія</a>
+        </li>
+        <li class="mobile-menu-item"
+          ><a href="./portfolio.html" class="mobile-menu-link mobile-menu-link--active"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Контакти</a> </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item"
+          ><a href="tel:+380961111111" class="tel-link">+380961111111</a></li
+        >
+        <li class="mobile-contacts-item"
+          ><a href="mailto:info@devstudio.com" class="mail-link">info@devstudio.com</a></li
+        >
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item"
+          ><a
+            href="https://instagram.com"
+            class="mobile-socials-link mobile-socials-link--separator"
+            >Instagram</a
+          ></li
+        >
+        <li class="mobile-socials-item"
+          ><a href="https://twitter.com" class="mobile-socials-link mobile-socials-link--separator"
+            >Twitter</a
+          ></li
+        >
+        <li class="mobile-socials-item"
+          ><a href="https://facebook.com" class="mobile-socials-link mobile-socials-link--separator"
+            >Facebook</a
+          ></li
+        >
+        <li class="mobile-socials-item"
+          ><a href="https://linkedin.com" class="mobile-socials-link">LinkedIn</a></li
+        >
+      </ul>
+    </div>
+
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

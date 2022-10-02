@@ -1,5 +1,6 @@
 // Utils stiles
 @import './utils/variables';
+@import './utils/normalize';
 @import './utils/visually-hidden';
 @import './utils/plaseholders';
 @import './utils/_mixin';
@@ -28,3 +29,4 @@
 @import './components/socials';
 @import './components/footer-form';
 @import './components/modal-window';
+@import './components/menu';

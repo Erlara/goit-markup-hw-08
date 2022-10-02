@@ -1,6 +1,9 @@
 .work {
-  display: flex;
-  gap: 30px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .work__thumb {
