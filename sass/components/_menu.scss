@@ -69,6 +69,10 @@
   }
 }
 
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
 .tel-link {
   display: block;
   font-weight: 500;
@@ -85,7 +89,6 @@
   line-height: 28px;
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
-  margin-bottom: 64px;
 }
 .menu-toggle {
   position: absolute;
@@ -107,7 +110,7 @@
 
 .mobile-socials {
   display: flex;
-  margin-top: 40px;
+
   gap: 20px;
 }
 

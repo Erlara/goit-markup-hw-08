@@ -10,16 +10,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  //tablet styles
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
-  }
-
-  //desktop styles
-  @media screen and (min-width: 1200px) {
-    margin-right: 0px;
-  }
 }
 
 .address-link {
@@ -63,8 +53,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
+  justify-content: space-around;
+
+  @media screen and (max-width: 1199px) {
+    gap: 60px;
+  }
 
   //tablet styles
   @media screen and (min-width: 768px) {
@@ -78,6 +71,7 @@
     align-items: baseline;
     flex-direction: inherit;
     flex-wrap: nowrap;
+    flex-grow: 1;
   }
 }
 

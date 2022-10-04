@@ -1,6 +1,6 @@
 .hero {
   background-color: var(--secondary-bgd-cl);
-  padding: 200px 0;
+  padding: 118px 0;
 
   max-width: 1600px;
   margin-left: auto;
@@ -18,8 +18,12 @@
       url(../images/hero/img_sm@2x.png);
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 200px 0;
+  }
+
   //tablet image
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 480px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/img_md@1x.png);
   }
@@ -29,7 +33,7 @@
   }
 
   //desktop image
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/img_lg@1x.png);
   }
@@ -59,5 +63,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: calc(60 / 44);
+    width: 696px;
+    height: 120px;
   }
 }
