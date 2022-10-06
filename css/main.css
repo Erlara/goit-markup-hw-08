@@ -452,18 +452,18 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_sm@1x.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_sm@1x.png);
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_sm@2x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_sm@2x.png);
   }
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    padding: 200px 0;
-  }
-}
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_md@1x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md@1x.png);
@@ -475,7 +475,7 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md@2x.png);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_lg@1x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_lg@1x.png);
@@ -510,6 +510,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-txt-cl);
+  width: 360px;
+  height: 84px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -848,7 +850,7 @@ body {
   border-right: 1px solid var(--border-cl);
 }
 
-.portfolio-container-name--other {
+.portfolio-container-name {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
